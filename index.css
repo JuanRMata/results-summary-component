@@ -1,0 +1,336 @@
+:root {
+    --fuente: "Hanken Grotesk", sans-serif;
+    --colorFondo: #fff;
+    --colorFResultado: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
+    --colorFCResult: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100%); 
+    --colorFuenteResultado: #fff;
+}
+
+* {
+    font-family: var(--fuente);
+}
+
+/* Pantalla principal */
+
+.padre {
+    background-color: var(--colorFondo);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Contenedor general de resultado */
+.contenedorResultado {
+    background: var(--colorFResultado);
+    height: 44%;
+    width: 100%;
+    border-radius: 0px 0px 32px 32px;
+    box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--colorFuenteResultado);
+    text-align: center;
+}
+
+.contenedorResultado h1 {
+    color: var(--Light-Blue, #CAC9FF);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.contenedorResultado h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.contenedorResultado p {
+    color: var(--Light-Blue, #CAC9FF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+/* Circulo de contenido que se encuentra dentro del contenedor general de resultado */
+
+.result {
+    width: 140px; 
+    height: 140px; 
+    border-radius: 50%;
+    background: var(--colorFCResult);
+    display: flex;
+    flex-direction: column;
+}
+
+.result .resultado {
+    color: var(--colorFuenteResultado);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 72px;
+    margin-top: 25px;
+}
+
+.result .total {
+    color: var(--Light-Blue, #CAC9FF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 22px;
+}
+
+/* Contenedor de resumen */
+
+.contenedorResumen {
+    width: 100%;
+    height: 100%;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.contenedorResumen .subtitulo {
+    color: var(--Dark-Navy, #303B59);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 24px;
+}
+
+
+/* contenedor para reaction */
+.contenedorResumen .reaction {
+    width: 75%;
+    height: 2%;
+    border-radius: 12px;
+    background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55);
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5% 3% 5%;
+    margin-bottom: 16px;
+}
+
+.contenedorResumen .reaction1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--Red, #F55);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contenedorResumen .reaction2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedorResumen .reaction2 p {
+    color: var(--Dark-Navy, #303B59);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.contenedorResumen .reaction2 .tot {
+    opacity: 0.5;
+}
+
+/* contenedor para memory */
+
+.contenedorResumen .memory {
+    width: 75%;
+    height: 2%;
+    border-radius: 12px;
+    background: var(--yellow-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E);
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5% 3% 5%;
+    margin-bottom: 16px;
+}
+
+.contenedorResumen .memory1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--Yellow, #FFB21E);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contenedorResumen .memory2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedorResumen .memory2 p {
+    color: var(--Dark-Navy, #303B59);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.contenedorResumen .memory2 .tot {
+    opacity: 0.5;
+}
+
+/* contenedor para verbal */
+
+.contenedorResumen .verbal {
+    width: 75%;
+    height: 2%;
+    border-radius: 12px;
+    background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F);
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5% 3% 5%;
+    margin-bottom: 16px;
+}
+
+.contenedorResumen .verbal1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--Green, #00BB8F);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.contenedorResumen .verbal2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedorResumen .verbal2 p {
+    color: var(--Dark-Navy, #303B59);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.contenedorResumen .verbal2 .tot {
+    opacity: 0.5;
+}
+
+/* contenedor para visual */
+
+.contenedorResumen .visual {
+    width: 75%;
+    height: 2%;
+    border-radius: 12px;
+    background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125D6);
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5% 3% 5%;
+    margin-bottom: 16px;
+}
+
+.contenedorResumen .visual1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--Blue, #1125D6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.contenedorResumen .visual2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedorResumen .visual2 p {
+    color: var(--Dark-Navy, #303B59);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.contenedorResumen .visual2 .tot {
+    opacity: 0.5;
+}
+
+/* boton */
+
+.boton {
+    width: 85%;
+    height: 2%;
+    border-radius: 128px;
+    background: var(--Dark-Navy, #303B59);
+    border: none;
+    color: var(--colorFuenteResultado);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 17px 0 17px 0;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: var(--Gradient-1, linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%));
+}
+/* Diseno responsive */
+
+@media  (min-width: 768px){
+    .padre {
+        padding: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    .principal {
+        width: 50%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+        border-radius: 32px;
+    }
+    .contenedorResumen {
+        width: 100%;
+        height: 100%;
+        grid-column: 2 / 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .contenedorResultado {
+        width: 100%;
+        border-radius: 32px;
+        height: 100%;
+        grid-column: 1 / 1;
+        justify-content: space-around;
+    }
+    .boton {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
